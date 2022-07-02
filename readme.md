@@ -1,15 +1,15 @@
 # Clean Code e Clean Architecture - Turma 7 (práticas aula 1)
 ## Resumão Code Smell
 ### Sintomas e Técnicas de Refatoração
-1- Nomes estranhos: renomear variáveis, funções, métodos, arquivos, pastas, etc;
-2- Números mágicos: extrair constantes, variáveis explicativas, enums, etc;
-3- Comentário útil/Código comentado e morto: extrair funções/métodos, variáveis explicativas, etc;
-4- Condição complexa: extrair funções/métodos, variáveis explicativas, etc;
-5- Condições extensas: extrair funções/métodos, variáveis explicativas, etc;
-6- Linhas em branco: Apagar;
-7- Retornos estranhos (códigos numéricos - dependendo da linguagem faça sentido): Tratamento de erros, exceptions pattern result, etc;
-8- Condições confusas: Introduzir técnicas de guarda, extrair condições para functions, consolidar condições;
-9- Método longo (Quebram SRP e OCP): separar as reponsabilidades, etc;
+1. Nomes estranhos: renomear variáveis, funções, métodos, arquivos, pastas, etc;
+2. Números mágicos: extrair constantes, variáveis explicativas, enums, etc;
+3. Comentário útil/Código comentado e morto: extrair funções/métodos, variáveis explicativas, etc;
+4. Condição complexa: extrair funções/métodos, variáveis explicativas, etc;
+5. Condições extensas: extrair funções/métodos, variáveis explicativas, etc;
+6. Linhas em branco: Apagar;
+7. Retornos estranhos (códigos numéricos - dependendo da linguagem faça sentido): Tratamento de erros, exceptions pattern result, etc;
+8. Condições confusas: Introduzir técnicas de guarda, extrair condições para functions, consolidar condições;
+9. Método longo (Quebram SRP e OCP): separar as reponsabilidades, etc;
 
 * Trazer código para a margem;
 * Fail fast validations;
@@ -18,9 +18,9 @@
 Vamos implementar um sistema de vendas online com a possibilidade de realizar pedidos com múltiplos itens, cada um deles com uma quantidade variável, calculando o frete, os impostos, aplicando um cupom de desconto e ainda interagindo com o estoque. Além disso teremos ainda fluxos de pagamento e cancelamento do pedido realizado.
 
 ## Testes
-1 - Não deve criar um pedido com cpf inválido
-2 - Deve criar um pedido com 3 itens (com descrição, preço e quantidade)
-3 - Deve criar um pedido com cupom de desconto (percentual sobre o total do pedido)
+1. Não deve criar um pedido com cpf inválido
+2. Deve criar um pedido com 3 itens (com descrição, preço e quantidade)
+3. Deve criar um pedido com cupom de desconto (percentual sobre o total do pedido)
 
 ## Considere
 Refatorar o algoritmo de validação de cpf (https://github.com/rodrigobranas/cccat7_refactoring/blob/master/src/cpf.ts)
