@@ -1,4 +1,19 @@
 # Clean Code e Clean Architecture - Turma 7 (práticas aula 1)
+## Resumão Code Smell
+### Sintomas e Técnicas de Refatoração
+1- Nomes estranhos: renomear variáveis, funções, métodos, arquivos, pastas, etc;
+2- Números mágicos: extrair constantes, variáveis explicativas, enums, etc;
+3- Comentário útil/Código comentado e morto: extrair funções/métodos, variáveis explicativas, etc;
+4- Condição complexa: extrair funções/métodos, variáveis explicativas, etc;
+5- Condições extensas: extrair funções/métodos, variáveis explicativas, etc;
+6- Linhas em branco: Apagar;
+7- Retornos estranhos (códigos numéricos - dependendo da linguagem faça sentido): Tratamento de erros, exceptions pattern result, etc;
+8- Condições confusas: Introduzir técnicas de guarda, extrair condições para functions, consolidar condições;
+9- Método longo (Quebram SRP e OCP): separar as reponsabilidades, etc;
+
+* Trazer código para a margem;
+* Fail fast validations;
+
 ## Cenário
 Vamos implementar um sistema de vendas online com a possibilidade de realizar pedidos com múltiplos itens, cada um deles com uma quantidade variável, calculando o frete, os impostos, aplicando um cupom de desconto e ainda interagindo com o estoque. Além disso teremos ainda fluxos de pagamento e cancelamento do pedido realizado.
 
@@ -40,6 +55,7 @@ Instale o TypeScript utilizando o comando abaixo, aproveitando para instalar out
 ## Depois disso, crie o arquivo tsconfig.json:
 ```npx tsc --init```
 Com isso, o arquivo tsconfig.js deve ter sido criado e estamos prontos para começar.
+
 ## Configuração do Jest
 Configure o Jest utilizando o comando abaixo:
 ```npx ts-jest config:init```
